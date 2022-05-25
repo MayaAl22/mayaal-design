@@ -1,0 +1,21 @@
+name: deploy
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: SSH setup
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.CICD_SSH_HOST_FINGERPRINT }}" >> ~/.ssh/known_hosts
+        echo "${{ secrets.CICD_SSH_KEY }}" > ~/.ssh/id_rsa
+        chmod -R 700 ~/.ssh
+    - name: Rsync deployment
+      run: |
+        rsync -avz -e ssh --delete . ${{ secrets.CICD_SSH_USER }}@${{ secrets.CICD_SSH_HOST}}:/var/www/mayaal-design
