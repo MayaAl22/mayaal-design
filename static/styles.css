@@ -657,3 +657,124 @@ footer {
     line-height: normal;
   }
 }
+
+
+/* section - skills */
+
+#skill-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 0;
+  gap: 1.75rem;
+  list-style-type: none;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.skill-item > .icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.skill-item > .title {
+  margin: 0;
+  color: #2E1B35;
+  font-family: museo-slab-rounded, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+  align-content: center;
+}
+
+.skill-item > .text {
+  display: flex;
+  color: #2E1B35;
+  flex-direction: column;
+  justify-content: normal;
+  row-gap: 0.75rem;
+}
+
+.skill-item > .text > .title {
+  margin: 0;
+  color: #2E1B35;
+  font-family: museo-slab-rounded, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+}
+
+.skill-item > .text > .description {
+  margin: 0;
+  color: #2E1B35;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+}
+
+@media (min-width: 1133px) {
+  #skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+    gap: 4rem;
+    list-style-type: none;
+  }
+
+  .skill-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .skill-item > .icon {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .skill-item > .title {
+    margin: 0;
+    color: #2E1B35;
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+    align-content: center;
+  }
+
+  .skill-item > .text {
+    display: flex;
+    color: #2E1B35;
+    flex-direction: column;
+    justify-content: normal;
+    row-gap: 0.75rem;
+  }
+  
+  .skill-item > .text > .title {
+    margin: 0;
+    color: #2E1B35;
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+  }
+  
+  .skill-item > .text > .description {
+    margin: 0;
+    color: #2E1B35;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.025rem;
+  }
+}
