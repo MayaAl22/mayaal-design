@@ -62,6 +62,104 @@ header {
   margin: 1.5rem;
 }
 
+#logo-title-container {
+  grid-row: 1;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.25rem;
+}
+
+#logo {
+  width: 1.691rem;
+  height: 1.691rem;
+}
+
+#title {
+  margin: 0;
+  color: #2E1B35;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#menu-button {
+  grid-row: 1;
+  grid-column: 4 / 5;
+  width: 1.5rem;
+  height: 1.5rem;
+  align-self: center;
+  justify-self: flex-end;
+  background: url("/static/images/menu-button-opening.svg");
+  padding: 0;
+  border-radius: 0;
+}
+
+header > nav {
+  grid-row: 1;
+  grid-column: 1 / 5;
+  grid-row: 2;
+  margin: 0.5rem 0 0 0;
+}
+
+header > nav > ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding-inline-start: 0;
+}
+
+header > nav > ul > li {
+  float: center;
+}
+
+header > nav > ul > li > a:link {
+  text-decoration: none;
+  color: #2E1B35;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.03rem;
+}
+
+header > nav > ul > li > a:visited {
+  text-decoration: none;
+  color: #2E1B35;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.03rem;
+}
+
+header > nav > ul > li > #active-page {
+  color: #2E1B35;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.03rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 0.31rem;
+}
+
+header > hr {
+  grid-row: 3;
+  grid-column: 1 / 5;
+  margin: 0;
+  border: inset 0.063rem #8F5EA0;
+}
+
 @media (min-width: 1133px) {
   header {
     display: grid;
@@ -69,6 +167,97 @@ header {
     gap: 1.5rem;
     width: 1013px;
     margin: 2.5rem auto 4rem auto;
+  }
+
+  #logo-title-container {
+    grid-row: 1;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+  }
+  
+  #logo {
+    width: 3.25rem;
+    height: 3.25rem;
+    grid-column: 1;
+  }
+
+  #title {
+    margin: 0;
+    color: #2E1B35;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  header > nav {
+    grid-row: 1;
+    grid-column: 8 / 13;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  header > nav > ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-inline-start: 0;
+  }
+
+  header > nav > ul > li {
+    float: right;
+  }
+
+  header > nav > ul > li > a:link {
+    text-decoration: none;
+    color: #2E1B35;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+  }
+
+  header > nav > ul > li > a:visited {
+    text-decoration: none;
+    color: #2E1B35;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+  }
+
+  header > nav > ul > li > #active-page {
+    color: #2E1B35;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.125rem;
+    text-underline-offset: 0.31rem;
+  }
+
+  header > hr {
+    grid-row: 2;
+    grid-column: 1 / 13;
+    margin: 0;
+    border: inset 0.063rem #8F5EA0;
   }
 }
 

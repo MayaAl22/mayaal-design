@@ -5,10 +5,23 @@
     <link rel="icon" href="/static/images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/uwr2gvc.css" />
+    <script type="text/javascript" src="/static/scripts/scripts.js"></script>
     <title>MayaAl.Design</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div id="logo-title-container">
+        <img id="logo" src="/static/images/logo.svg" alt="MayaAl.Design logo">
+        <h1 id="title">Mayaal.Design</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/" id="active-page">Home</a></li>
+        </ul>
+      </nav>
+      <button id="menu-button" role="button" aria-label="Open menu" onclick="toggleMenu();"></button>
+      <hr>
+    </header>
     <main></main>
     <footer></footer>
   </body>
