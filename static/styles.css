@@ -399,3 +399,103 @@ footer {
     color: #2E1B35;
   }
 }
+
+
+/* section - about */
+
+#about-container-left-aligned {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-areas:
+    "title"
+    "text"
+    "portrait";
+}
+
+#about-container-right-aligned {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-areas:
+    "title"
+    "text"
+    "portrait";
+}
+
+#about-title {
+  grid-area: title;
+  margin: 0;
+  color: #2E1B35;
+  font-family: museo-slab-rounded, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+
+#about-text {
+  grid-area: text;
+  margin: 0;
+  color: #2E1B35;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.025rem;
+}
+
+#about-portrait {
+  grid-area: portrait;
+  width: 100%;
+  height: 100%;
+  max-width: 13.75rem;
+  max-height: 17.75rem;
+  justify-self: end;
+}
+
+@media (min-width: 1133px) {
+  #about-container-left-aligned {
+    display: grid;
+    gap: 1rem 4.3rem;
+    grid-template-areas:
+      "portrait ."
+      "portrait title"
+      "portrait text"
+      "portrait .";
+  }
+
+  #about-container-right-aligned {
+    display: grid;
+    gap: 1rem 4.3rem;
+    grid-template-areas:
+      ".     portrait"
+      "title portrait"
+      "text  portrait"
+      ".     portrait";
+  }
+
+  #about-title {
+    grid-area: title;
+    color: #2E1B35;
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.12rem;
+  }
+
+  #about-text {
+    grid-area: text;
+    color: #2E1B35;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+  }
+
+  #about-portrait {
+    grid-area: portrait;
+    max-width: unset;
+    max-height: unset;
+  }
+}
