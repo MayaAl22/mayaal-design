@@ -778,3 +778,98 @@ footer {
     letter-spacing: 0.025rem;
   }
 }
+
+
+/* section - achievements */
+
+#achievement-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  gap: 4.5rem;
+  list-style-type: none;
+}
+
+.achievement-item {
+  display: inline-grid;
+  grid-template-areas: "title"
+                       "text"
+                       "icon";
+  grid-template-rows: auto auto auto;
+  align-content: center;
+}
+
+.achievement-item > .title {
+  grid-area: title;
+  margin: 0 0 0.75rem 0;
+  color: #2E1B35;
+  font-family: museo-slab-rounded, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.025rem;
+}
+
+.achievement-item > .text {
+  grid-area: text;
+  margin: 0 0 2rem 0;
+  color: #2E1B35;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+}
+
+.achievement-item > .icon {
+  grid-area: icon;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1133px) {
+  #achievement-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    gap: 4.5rem;
+    list-style-type: none;
+  }
+  
+  .achievement-item {
+    display: inline-grid;
+    grid-template-areas: "title"
+                         "text"
+                         "icon";
+    grid-template-rows: auto auto auto;
+    align-content: center;
+  }
+  
+  .achievement-item > .title {
+    grid-area: title;
+    margin: 0 0 0.75rem 0;
+    color: #2E1B35;
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+  }
+
+  .achievement-item > .text {
+    grid-area: text;
+    margin: 0 0 2rem 0;
+    color: #2E1B35;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.025rem;
+  }
+
+  .achievement-item > .icon {
+    grid-area: icon;
+    width: 100%;
+    height: 100%;
+  }
+}
