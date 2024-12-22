@@ -6,6 +6,52 @@ body {
   margin: 0;
 }
 
+p {
+  font-family: source-sans-pro, sans-serif;
+}
+
+a {
+  font-family: source-sans-pro, sans-serif;
+}
+
+button {
+  width: 9.5rem;
+  height: 3rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.8125rem;
+  border-style: none;
+  background-color: #2E1B35;
+  color: #FCFCFC;
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+button:hover {
+  background-color: #502F5C;
+}
+
+@media (min-width: 1133px) {  
+  button {
+    width: 12.125rem;
+    height: 3.5rem;
+    padding: 1rem 2.4375rem;
+    border-radius: 0.8125rem;
+    border-style: none;
+    background-color: #2E1B35;
+    color: #FCFCFC;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  button:hover {
+    background-color: #502F5C;
+  }
+}
+
 
 /* header */
 
@@ -37,6 +83,23 @@ main {
   gap: 2.25rem;
 }
 
+.section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.section-container > .title {
+  margin: 0;
+  color: #2E1B35;
+  font-family: museo-slab-rounded, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+}
+
 @media (min-width: 1133px) {
   main {
     display: flex;
@@ -44,6 +107,23 @@ main {
     width: 1013px;
     margin: 0 auto 0 auto;
     gap: 6rem;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .section-container > .title {
+    margin: 0;
+    color: #2E1B35;
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.02rem;
   }
 }
 
