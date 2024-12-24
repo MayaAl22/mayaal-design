@@ -18,4 +18,8 @@ jobs:
         chmod -R 700 ~/.ssh
     - name: Rsync deployment
       run: |
-        rsync -avz -e ssh --delete . ${{ secrets.CICD_SSH_USER }}@${{ secrets.CICD_SSH_HOST}}:/var/www/mayaal-design
+        rsync \
+          -avz \
+          -e ssh \
+          --delete . \
+          ${{ secrets.CICD_SSH_USER }}@${{ secrets.CICD_SSH_HOST}}:/var/www/mayaal-design
