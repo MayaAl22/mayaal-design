@@ -20,10 +20,10 @@ jobs:
       env:
         REMOTE_DIRECTORY: /var/www/mayaal-design
       run: |
+        cd mayaal.design
         rsync \
           -avz \
-          --exclude '.git' \
-          --exclude '.github' \
           -e ssh \
-          --delete . \
+          --delete \
+          . \
           ${{ secrets.CICD_SSH_USER }}@${{ secrets.CICD_SSH_HOST}}:${{ env.REMOTE_DIRECTORY }}
