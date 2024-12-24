@@ -20,6 +20,8 @@ jobs:
       run: |
         rsync \
           -avz \
+          --exclude '.git' \
+          --exclude '.github' \
           -e ssh \
           --delete . \
           ${{ secrets.CICD_SSH_USER }}@${{ secrets.CICD_SSH_HOST}}:/var/www/mayaal-design
