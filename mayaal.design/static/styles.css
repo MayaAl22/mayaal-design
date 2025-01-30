@@ -417,6 +417,7 @@ footer {
   grid-template-areas:
     "title"
     "text"
+    "location"
     "portrait";
 }
 
@@ -451,6 +452,36 @@ footer {
   justify-self: end;
 }
 
+#about-location {
+  grid-area: location;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2E1B35;
+  opacity: 90%;
+}
+
+#about-location-text {
+  justify-content: flex-start;
+  text-align: left;
+  position: relative;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  letter-spacing: 0.02rem;
+}
+
+#about-location-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
 @media (min-width: 1133px) {
   #about-container-left-aligned {
     display: grid;
@@ -466,10 +497,11 @@ footer {
     display: grid;
     gap: 1rem 4.3rem;
     grid-template-areas:
-      ".     portrait"
-      "title portrait"
-      "text  portrait"
-      ".     portrait";
+      ".        portrait"
+      "title    portrait"
+      "text     portrait"
+      "location portrait"
+      ".        portrait";
   }
 
   #about-title {
@@ -496,6 +528,35 @@ footer {
     grid-area: portrait;
     max-width: unset;
     max-height: unset;
+  }
+
+  #about-location {
+    grid-area: location;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2E1B35;
+    opacity: 90%;
+  }
+  
+  #about-location-text {
+    justify-content: flex-start;
+    text-align: left;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    letter-spacing: 0.025rem;
+  }
+
+  #about-location-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
   }
 }
 
