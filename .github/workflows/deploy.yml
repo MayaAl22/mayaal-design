@@ -20,7 +20,7 @@ jobs:
       env:
         REMOTE_DIRECTORY: /var/www/mayaal-design
       run: |
-        cd mayaal.design
+        cd src
         rsync \
           -avz \
           -e ssh \
