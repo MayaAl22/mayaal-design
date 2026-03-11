@@ -1,6 +1,6 @@
 {
   "name": "mayaal-design",
-  "source": "src/index.html",
+  "source": "src/pages/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
