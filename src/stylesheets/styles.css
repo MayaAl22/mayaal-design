@@ -92,7 +92,7 @@ header {
   height: 1.5rem;
   align-self: center;
   justify-self: flex-end;
-  background: url("./images/menu-button-opening.svg");
+  background: url("../images/menu-button-opening.svg");
   padding: 0;
   border-radius: 0;
 }
