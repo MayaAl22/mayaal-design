@@ -2,7 +2,7 @@
 
 body {
   background: #FCFCFC;
-  min-width: 320px;
+  min-width: 369px;
   margin: 0;
 }
 
@@ -266,7 +266,6 @@ header > hr {
 main {
   display: flex;
   flex-direction: column;
-  min-width: 272px;
   margin: 0 1.5rem 0 1.5rem;
   gap: 2.25rem;
 }
@@ -320,29 +319,41 @@ main {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 1fr));
-  min-width: 272px;
-  gap: 0.5rem;
+  grid-template-areas:
+      "hr     hr"
+      "social ."
+      "legal  copyright";
+  gap: 1.5rem;
   margin: 3.5rem 1.5rem 1.5rem 1.5rem;
   align-items: center;
 }
 
+footer > hr {
+  grid-area: hr;
+  margin: 0;
+  border: inset 0.063rem #8F5EA0;
+}
+
 #social {
-  grid-column: 1;
-  grid-row: 1;
+  grid-area: social;
   display: flex;
   flex-direction: row;
   gap: 0.75rem;
 }
   
-.social-logo {
+.social-item {
   width: 1.75rem;
   height: 1.75rem;
 }
 
-#email {
-  grid-column: 1;
-  grid-row: 2;
+#legal {
+  grid-area: legal;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.legal-item {
   color: #2E1B35;
   font-family: source-sans-pro, sans-serif;
   font-size: 1rem;
@@ -351,8 +362,7 @@ footer {
 }
 
 #copyright {
-  grid-column: 2 / 5;
-  grid-row: 2;
+  grid-area: copyright;
   margin: 0;
   text-align: right;
   color: #2E1B35;
@@ -365,37 +375,58 @@ footer {
 @media (min-width: 1133px) {
   footer {
     display: grid;
-    grid-template-columns: repeat(12, minmax(auto, 1fr));
-    gap: 1.25rem;
+    grid-template-areas:
+      "hr     hr"
+      "social ."
+      "legal  copyright";
     width: 1013px;
     margin: 4rem auto 2.5rem auto;
     align-items: center;
-  } 
+  }
+
+  footer > hr {
+    grid-area: hr;
+    margin: 0;
+    border: inset 0.063rem #8F5EA0;
+  }
 
   #social {
-    grid-column: 1 / 2;
-    grid-row: 1;
+    grid-area: social;
     display: flex;
     flex-direction: row;
     gap: 0.75rem;
   }
     
-  .social-logo {
+  .social-item {
     width: 1.75rem;
     height: 1.75rem;
   }
 
-  #email {
-    grid-column: 2 / 3;
-    grid-row: 1;
+  #legal {
+    grid-area: legal;
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  .legal-item {
+    margin: 0;
     color: #2E1B35;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
   }
 
   #copyright {
-    grid-column: 8 / 13;
-    grid-row: 1;
+    grid-area: copyright;
+    margin: 0;
     text-align: right;
     color: #2E1B35;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
   }
 }
 
@@ -413,7 +444,7 @@ footer {
 
 #about-container-right-aligned {
   display: grid;
-  gap: 0.75rem;
+  gap: 1.75rem;
   grid-template-areas:
     "title"
     "text"
