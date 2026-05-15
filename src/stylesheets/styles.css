@@ -8,10 +8,76 @@ body {
 
 p {
   font-family: source-sans-pro, sans-serif;
+  font-size: 1rem;
+  margin: 0;
 }
 
 a {
   font-family: source-sans-pro, sans-serif;
+}
+
+ol {
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+li {
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+h1 {
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  line-height: normal;
+  color: #2E1B35;
+}
+
+h2 {
+  font-family: museo-slab-rounded, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  line-height: normal;
+}
+
+h3 {
+  font-family: museo-slab-rounded, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  line-height: normal;
+}
+
+h4 {
+  font-family: museo-slab-rounded, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  line-height: normal;
+}
+
+h5 {
+  font-family: museo-slab-rounded, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  line-height: normal;
+}
+
+h6 {
+  font-family: museo-slab-rounded, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  line-height: normal;
 }
 
 button {
@@ -32,7 +98,90 @@ button:hover {
   background-color: #502F5C;
 }
 
-@media (min-width: 1133px) {  
+@media (min-width: 1133px) {
+  body {
+    background: #FCFCFC;
+    min-width: 1133px;
+    margin: 0;
+  }
+
+  p {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  a {
+    font-family: source-sans-pro, sans-serif;
+  }
+
+  ol {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  li {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    line-height: normal;
+    color: #2E1B35;
+  }
+
+  h2 {
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    line-height: normal;
+  }
+
+  h3 {
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    line-height: normal;
+  }
+
+  h4 {
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    line-height: normal;
+  }
+
+  h5 {
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    line-height: normal;
+  }
+
+  h6 {
+    font-family: museo-slab-rounded, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    line-height: normal;
+  }
+
   button {
     width: 12.125rem;
     height: 3.5rem;
@@ -59,7 +208,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
   gap: 0.5rem;
-  margin: 1.5rem;
+  margin: 1.5rem 1.5rem 1.5rem 1.75rem;
 }
 
 #logo-title-container {
@@ -73,16 +222,6 @@ header {
 #logo {
   width: 1.691rem;
   height: 1.691rem;
-}
-
-#title {
-  margin: 0;
-  color: #2E1B35;
-  font-family: source-sans-pro, sans-serif;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 #menu-button {
@@ -183,16 +322,6 @@ header > hr {
     grid-column: 1;
   }
 
-  #title {
-    margin: 0;
-    color: #2E1B35;
-    font-family: source-sans-pro, sans-serif;
-    font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
   #menu-button {
     display: none;
   }
@@ -267,7 +396,7 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 1.5rem 0 1.5rem;
-  gap: 2.25rem;
+  gap: 1.5rem;
 }
 
 .section-container {
@@ -293,7 +422,7 @@ main {
     flex-direction: column;
     width: 1013px;
     margin: 0 auto 0 auto;
-    gap: 6rem;
+    gap: 2rem;
   }
 
   .section-container {
