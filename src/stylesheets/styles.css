@@ -559,6 +559,85 @@ footer > hr {
   }
 }
 
+/* imprint */
+
+.imprint-section-container {
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1133px) {
+  .imprint-section-container {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* privacy policy */
+
+#privacy-policy-table-of-contents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#privacy-policy-contents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.privacy-policy-contents-h3-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.privacy-policy-contents-h4-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.privacy-policy-contents-h5-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 1133px) {
+  #privacy-policy-table-of-contents-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .privacy-policy-contents-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .privacy-policy-contents-h3-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .privacy-policy-contents-h4-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .privacy-policy-contents-h5-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
 
 /* section - about */
 
